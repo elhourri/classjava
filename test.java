@@ -2,7 +2,7 @@ class Etudiant
 {
     //les attributs 
     private String firstname;
-    private String lastname:
+    private String lastname;
     private int age;
 
 //Les constructeurs
@@ -12,7 +12,7 @@ public Etudiant(String fname,String lname,int age){
     this.firstname=fname;
     this.lastname=lname;
     this.age=age;
-    super();}
+}
  //Les Accesseurs
     //Les getters
    public String getFirstName(){return this.firstname;} 
@@ -30,25 +30,30 @@ public Etudiant(String fname,String lname,int age){
    public String Action2(){  return "Bonjour j ai "+this.getage();} 
 
 }
-class voiture 
+class Voiture 
 {
     //les attributs
     private String name;
     private int model;
     //les constructeurs
-    public voiture (){}
+    public Voiture (){}
     //les getters
     public String getname(){return this.name;} 
-    public int gemodel(){return this.model;} 
+    public int getmodel(){return this.model;} 
     //les setters
     public void setName(String name_){ this.name=name_;} 
-    public void setmodel(String model_){ this.model=model_;}
+    public void setmodel(int model_){ this.model=model_;}
     //les methodes
     public void action1(){ System.out.println("3wj rwayd");}
 }
 
 
-public class Main {
+class Main {
     public static void main(String[] args) {
+        Etudiant e1=new Etudiant();
+        Voiture  v1=new Voiture();
+        e1.setFirstName("Mohamed");
+        System.out.println("etudiant s appelle "+e1.getFirstName());
+        v1.setmodel(1991);
+        System.out.println("la voiture est de model "+v1.getmodel());
     }
-  }
